@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap页面练习</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper clearfix">
+            <nav id="header" class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">
+                            <img src="./image/logo.png">
+                        </a>
+            
+                    </div>
+                    <div class="navbar-left">
+                        <ul class="nav navbar-nav collapse navbar-collapse" id="navbar-collapse">
+                            <li class="active">
+                                <a href="#">首页</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">生日
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <div class="pull-left">
+                                        <li class="menu-header">关系</li>
+                                        <li class="divider"></li>
+                                        <li>朋友</li>
+                                        <li>爱人</li>
+                                        <li>姐妹</li>
+                                    </div>
+                                    <div class="pull-left">
+                                        <li class="menu-header">风味</li>
+                                        <li class="divider"></li>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">婚礼
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <div class="pull-left">
+                                        <li class="menu-header">关系</li>
+                                        <li class="divider"></li>
+                                        <li>朋友</li>
+                                        <li>爱人</li>
+                                        <li>姐妹</li>
+                                    </div>
+                                    <div class="pull-left">
+                                        <li class="menu-header">风味</li>
+                                        <li class="divider"></li>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </div>
+                                    <div class="pull-left">
+                                        <li class="menu-header">主旋律</li>
+                                        <li class="divider"></li>
+                                        <li>心形</li>
+                                        <li>卡通</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">专用
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <div class="pull-left">
+                                        <li class="menu-header">关系</li>
+                                        <li class="divider"></li>
+                                        <li>朋友</li>
+                                        <li>爱人</li>
+                                        <li>姐妹</li>
+                                    </div>
+                                    <div class="pull-left">
+                                        <li class="menu-header">风味</li>
+                                        <li class="divider"></li>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">商铺
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <div class="pull-left">
+                                        <li class="menu-header">关系</li>
+                                        <li class="divider"></li>
+                                        <li>朋友</li>
+                                        <li>爱人</li>
+                                        <li>姐妹</li>
+                                    </div>
+                                    <div class="pull-left">
+                                        <li class="menu-header">风味</li>
+                                        <li class="divider"></li>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                        <div class="first-dropdown-menu dropdown-menu ">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon">搜</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </a>
+                        <div class="second-dropdown-menu dropdown-menu">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group login">
+                                    <button class="btn btn-default">登录</button>
+                                </div>
+                                <div class="form-group remember">
+                                    <input type="checkbox">
+                                    <i>记住</i>
+                                </div>
+                                <div class="formgroup">
+                                    <p>新用户？
+                                        <b>注册</b> | 忘记密码？
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                        <div class="third-dropdown-menu dropdown-menu">
+                            <div class="form-group">
+                                <p>$0.00(0)</p>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn">空</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <section id="banner">
+        <div class="wrapper">
+            <div class="wrapper-left">
+                <p class="p1">XXXXX 
+                    <b>蛋糕</b>
+                </p>
+                <p class="p2">特别的日子，特别的你</p>
+                <button class="btn btn-default">SHOP NOW</button>
+            </div>
+            <div class="wrapper-right">
+                <img src="https://s1.ax1x.com/2018/12/07/F1ocbn.png">
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="cakebox col-md-8 col-xs-12">
+                    <div class="cakeimg">
+                        <img src="./image/g1.jpg" alt="">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-4 col-xs-0">
+                        <div class="cakeimg">
+                            <img src="./image/g2.jpg" alt="">
+                            <div class="popup">
+                                <span class="glyphicon glyphicon-eye-open"> View</span>
+                                <button>SHOW NOW</button>
+                            </div>
+                        </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g3.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g4.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g5.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g6.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g7.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g8.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g9.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+                <div class="cakebox col-md-3 col-sm-4 col-xs-6">
+                    <div class="cakeimg">
+                        <img src="./image/g10.png" class="img-thumbnail">
+                        <div class="popup">
+                            <span class="glyphicon glyphicon-eye-open"> View</span>
+                            <button>SHOW NOW</button>
+                        </div>
+                    </div>
+                    <div class="popup"></div>
+                    <b class="introduce">xxxxx xxxxxx xx xxxxxx</b>
+                    <br>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <p class="pull-right">$95.00</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="subscribe">
+        <div class="wrapper">
+            <div class="input-group x1">
+                <h1>Newsletter</h1>
+            </div>
+            <div class="input-group x2">
+                <input type="text">
+                <button class="form-group-addon">subscribe</button>
+            </div>
+        </div>
+    </section>
+    <section id="footer-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footlink col-md-3 col-sm-4 col-xs-4">
+                    <h3>COMPANY</h1>
+                    <p>Products</p>
+                    <p>Work here</p>
+                    <p>Team</p>
+                    <p>Hapenings</p>
+                    <p>Dealer Locator</p>
+                </div>
+                <div class="footlink col-md-3 col-sm-4 col-xs-4">
+                    <h3>SERVICE</h3>
+                    <p>Support</p>
+                    <p>FAQ</p>
+                    <p>Warranty</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footlink col-md-3 col-sm-4 col-xs-4">
+                    <h3>COMPANY</h1>
+                    <p>Products</p>
+                    <p>Work here</p>
+                    <p>Team</p>
+                    <p>Hapenings</p>
+                    <p>Dealer Locator</p>
+                </div>
+                <div class="footlink col-md-3 col-sm-4 col-xs-4">
+                    <h3>SERVICE</h3>
+                    <p>Support</p>
+                    <p>FAQ</p>
+                    <p>Warranty</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Copyright @ 2018 xxxx.com All Rights Reserved | 京ICP子备 999999号-2</p>
+    </footer>
+</body>
+
+
+</html>

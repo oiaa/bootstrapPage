@@ -1,0 +1,542 @@
+//color variate
+@brown: #5d4d33;
+@orange: #f07918; 
+@linecolor: #77674b;
+@bannercolor: #f2f7f6;
+
+//test border
+.bb() {
+    border: 1px solid red;
+}
+.cc() {
+    border: 0px solid green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: @brown;
+    // overflow: hidden;
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+//navigation style
+#header {
+    width: 70%;
+    background-color: @brown; 
+    margin-bottom: 0;
+    border:none;
+    float: left;
+    
+    .container-fluid {
+        width: 100%;
+    }
+
+    .navbar-nav { 
+        margin-left: 30px;
+
+        .active > a {
+            background: @orange;
+        }
+
+        li {
+            border-left: 1px solid @linecolor;
+            float: left;
+
+            a {
+                padding-top: 20px;
+                height: 65px;
+                color: white;
+                display: inline-block;
+                
+                &:hover {
+                    background: @orange;
+                }
+            }
+        }
+    }
+
+    .navbar-left {
+        .dropdown-menu {
+            width: 500px;
+
+            .menu-header {
+                color: @orange;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            .pull-left , .pull-right {
+                margin-left: 30px;
+                width: 25%;
+            }
+
+            li {
+                border: none;
+                width: 100px;
+                cursor: pointer;
+                
+            }
+
+            li:not(.menu-header) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (min-width:770px) and (max-width:985px){
+
+    .header {
+        .wrapper {
+            height: 65px;
+        }
+    }
+    #header {
+        width: 100%;
+    }
+    
+    .navbar-right {
+        .navbar-nav {
+            position: relative;
+            top: -65px;
+        }
+    }
+}
+//这段实在改不明白了，老师帮帮忙吧
+@media screen and (max-width:770px){
+    .header {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    #header {
+        width: 100%;
+
+        .navbar-left {
+            
+            .dropdown-menu {
+
+                .pull-left,
+                .pull-right {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .navbar-toggle {
+        margin-right: 48%;
+    }
+
+    .navbar-left .nav>li {
+        width: 100%;
+    }
+
+    #header .navbar-nav li {
+        border: none;
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        overflow: hidden;
+    }
+
+    #header .navbar-nav .active>a,
+    #header .navbar-nav li a{
+        width: 100%;
+    }
+
+    .navbar-right {
+        width: 30%;
+        position: absolute;
+        right: 0;
+
+        .nav>li{
+            width: 30%;
+            float: left;
+        }
+
+        .navbar-nav{
+            a {
+                height: 50px;
+                padding: 10px 15px;
+            }
+
+            .first-dropdown-menu .input-group,
+            .second-dropdown-menu,
+            .third-dropdown-menu {
+                background-color: #fff;
+            }
+        } 
+    }
+
+    #header .navbar-nav {
+        margin: 0;
+    }
+
+
+}
+
+.navbar-right {
+    width: 180px;
+    float: right;
+    height: 65px;
+    
+
+    .navbar-nav {
+        height: 65px;
+        margin: 0;
+        line-height: 65px;
+
+        a {
+            height: 65px;
+            line-height: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            font-size: 18px;
+
+            &:hover {
+                background: #f07918;
+            }
+        }
+
+        .first-dropdown-menu {
+            .input-group {
+                padding: 20px;
+
+                input {
+                    width: 120px;
+                    border: 1px solid @orange;
+                    outline: none;
+                }
+
+                div {
+                    background: @orange;
+                    color: white;
+                    border: none;
+                }
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 0px;
+                border: 15px solid red;
+                border-color: transparent transparent white transparent;
+                position: absolute;
+                right: 10px;
+                top: -30px;
+            }
+        }
+
+        .second-dropdown-menu {
+            width: 300px;
+            padding: 20px;
+
+            .form-group {
+                height: 100px;
+                margin: 0;
+            }
+
+            .remember {
+                height: 20px;
+            }
+
+            .login {
+                height: 35px;
+            }
+
+            button {
+                background: @orange;
+                width: 100%;
+                border: 1px solid @orange;
+                color: white;
+
+                &:hover {
+                    color: @orange;
+                    background: white;
+                }
+            }
+
+            b {
+                color: @orange;
+                cursor: pointer;
+            }
+        }
+
+        .third-dropdown-menu {
+            padding: 20px;
+
+            p {
+                text-align: center;
+            }
+
+            button {
+                width: 100%;
+                background: @orange;
+                color: white;
+            }
+        }
+    }
+}
+
+//banner style
+#banner {
+    width: 100%;
+    height: 600px;
+    background: @bannercolor;
+
+    .wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 170px;
+        // .bb();
+        
+
+        .wrapper-left {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            // .bb;
+
+            .p1 {
+                font-size: 60px;
+                font-stretch: condensed;
+                font-weight: lighter;
+                color: @brown;
+
+                b {
+                    color: @orange;
+                    font-weight: bold;
+                    font-family: "SimSun";
+                }
+            }
+
+            .p2 {
+                color: @orange;
+                font-family: "SimSun";
+                font-weight: bolder;
+                letter-spacing: 9px;
+            }
+
+            button {
+                border: 5px solid @brown;
+                color: @brown;
+                font-weight: bolder;
+                font-size: 18px;
+                width: 60%;
+                margin-top: 30px;
+                background: @bannercolor;
+
+                &:hover {
+                    border: 5px solid @orange;
+                    color: @orange;
+                }
+            }
+        }
+
+        .wrapper-right {
+            width: 400px;
+            height: 400px;
+            // .bb;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//gallery style
+#gallery {
+    .container-fluid {
+        width: 80%;
+        margin-top: 110px;
+    }
+
+    .cakebox {
+        .cc;
+
+        .cakeimg {
+            position: relative;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+            }
+
+            .popup {
+                width: 100%;
+                height: 0;
+                position: absolute;
+                bottom: 0;
+                background: black;
+                opacity: .8;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                padding: 0 15px;
+                transition: height 0s;
+
+                button {
+                    height: 65%;
+                    border: none;
+                    background: transparent;
+                    border: 2px solid white;
+                    color: white;
+                    text-align: center;
+                    font-weight: bold;
+                    border-radius: 0;
+                    padding: 0 15px;
+
+                    &:hover {
+                        border: 2px solid @orange;
+                        background: transparent;
+                        color: @orange;
+                    }
+                }
+
+                span {
+                    color: white;
+                }
+            }
+
+            &:hover .popup {
+                height: 50px;
+            }
+        }
+
+        
+
+        .introduce {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .star {
+            margin-top: 10px;
+        }   
+    }
+}
+
+//subscribe style
+#subscribe {
+    width: 100%;
+    height: 330px;
+    background: url("../image/slid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-stretch: condensed;
+            letter-spacing: 5px;
+        }
+
+        .x2 {
+            margin-top: 20px;
+        }
+
+        input {
+            width: 430px;
+            height: 45px;
+            border: none;
+            background: white;
+            opacity: .6;
+        }
+
+        button {
+            width: 140px;
+            height: 45px;
+            border: none;
+            background: @orange;
+            color: white;
+
+            &:hover {
+                background: transparent;
+                border: 2px solid @orange;
+                color: @orange;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+//footer-bottom style
+#footer-bottom {
+    width: 100%;
+    height: 375px;
+
+    .container-fluid {
+        width: 80%;
+
+        .row {
+            margin-top: 65px;
+
+            .footlink {
+                
+                h3 {
+                    color: @orange;
+                    margin-bottom: 35px;
+                }
+
+                p {
+                    color: gray;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #f07918;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer style
+#footer {
+    width: 100%;
+    height: 60px;
+    background: @brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+        color: white;
+    }
+}
