@@ -115,81 +115,6 @@
         }
     }
 }
-//这段实在改不明白了，老师帮帮忙吧
-@media screen and (max-width:770px){
-    .header {
-        .wrapper {
-            width: 100%;
-        }
-    }
-
-    #header {
-        width: 100%;
-
-        .navbar-left {
-            
-            .dropdown-menu {
-
-                .pull-left,
-                .pull-right {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    .navbar-toggle {
-        margin-right: 48%;
-    }
-
-    .navbar-left .nav>li {
-        width: 100%;
-    }
-
-    #header .navbar-nav li {
-        border: none;
-        text-align: center;
-    }
-
-    .navbar-nav .dropdown-menu {
-        overflow: hidden;
-    }
-
-    #header .navbar-nav .active>a,
-    #header .navbar-nav li a{
-        width: 100%;
-    }
-
-    .navbar-right {
-        width: 30%;
-        position: absolute;
-        right: 0;
-
-        .nav>li{
-            width: 30%;
-            float: left;
-        }
-
-        .navbar-nav{
-            a {
-                height: 50px;
-                padding: 10px 15px;
-            }
-
-            .first-dropdown-menu .input-group,
-            .second-dropdown-menu,
-            .third-dropdown-menu {
-                background-color: #fff;
-            }
-        } 
-    }
-
-    #header .navbar-nav {
-        margin: 0;
-    }
-
-
-}
 
 .navbar-right {
     width: 180px;
@@ -345,7 +270,7 @@
                 border: 5px solid @brown;
                 color: @brown;
                 font-weight: bolder;
-                font-size: 18px;
+                font-size: 12px;
                 width: 60%;
                 margin-top: 30px;
                 background: @bannercolor;
@@ -540,3 +465,100 @@
         color: white;
     }
 }
+
+
+@media screen and (max-width:770px){
+    .header {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    #header {
+        width: 100%;
+
+        .navbar-left {
+            
+            .dropdown-menu {
+
+                .pull-left,
+                .pull-right {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .navbar-toggle {
+        margin-right: 48%;
+    }
+
+    .navbar-left .nav>li {
+        width: 100%;
+    }
+
+    #header .navbar-nav li {
+        border: none;
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        overflow: hidden;
+    }
+
+    #header .navbar-nav .active>a,
+    #header .navbar-nav li a{
+        width: 100%;
+    }
+
+    .navbar-right {
+        width: 30%;
+        position: absolute;
+        right: 0;
+
+        .nav>li{
+            width: 30%;
+            float: left;
+        }
+
+        .navbar-nav{
+            a {
+                height: 50px;
+                padding: 10px 15px;
+            }
+
+            .first-dropdown-menu .input-group,
+            .second-dropdown-menu,
+            .third-dropdown-menu {
+                background-color: #fff;
+            }
+        } 
+    }
+
+    #header .navbar-nav {
+        margin: 0;
+    }
+
+    #subscribe {
+
+        .wrapper {
+    
+            input {
+                width: 230px;
+            }
+    
+            button {
+                width: 100px;
+            }
+        }
+    }
+
+    #footer-bottom h3 {
+        font-size: 18px;
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
+}
+
